@@ -12,8 +12,8 @@
         <h1 class="main-header__title">Andrew Zhang</h1>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__list-item"> <a href="#">About</a></li>
-                <li class="nav__list-item"> <a href="#">Projects</a></a></li>
+                <li class="nav__list-item"> <a href="#about">About</a></li>
+                <li class="nav__list-item"> <a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -21,12 +21,15 @@
         <div class="container">
             <div class="article-container column-layout column-layout--three">
                 <article>
-                    <h2>Bio</h2>
+                    <h2 class="font-mod" id="about">About Me</h2>
                     <section>
                         <img src="https://cdn.ebaumsworld.com/mediaFiles/picture/1035099/85708057.jpg" alt="pic of dog" width="150px" height="150px">
-                        <p>I graduated from The Ohio State University in 2014 with a BS in Business Administration. I started working in the Logistics industry and did not find it challenging enough so here I am pursuing a job in the IT industry. I am a current student at We Can Code It learning how to be a full stack developer.</p>
-                        <p><a href="https://www.linkedin.com/in/andrew-zhang-03238a49">LinkedIn</a></p>
-                        <p><a href="https://github.com/Andrew614" target="_blank">Github</a></p>
+                        <p>I graduated from The Ohio State University in 2014 with a BS in Business Administration. I started working in the logistics industry and did not find it challenging enough so here I am pursuing a career in software development. I am a current student at We Can Code It learning how to be a full stack developer.</p>
+                        <section class="font-awesome">
+                            <p><a href="https://www.linkedin.com/in/andrew-zhang-03238a49" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+                            <p><a href="https://github.com/Andrew614" target="_blank"><i class="fab fa-github"></i></a></p>
+                        </section>
+                        <section>
                         <ul><strong>Skills:</strong>
                             <li>Agile</li>
                             <li>TDD</li>
@@ -38,29 +41,30 @@
                         </ul>
                     </section>
                 </article>
+                <hr>
                 <article>
-                    <h2>Projects</h2>
-                    <section>
-                        <h3><a href="https://github.com/Andrew614/virtual-pet" target="_blank">Virtual Pet</a></h3>
-                        <p>For the Virutal Pet project, I worked in a team on 5 people, mostly mobbing the whole project together. This was written in eclipse with Java 8. We utilized Agile methodology, Scrum Board, TDD/ JUnit, and OOP.</p>
-                    </section>
-                    <section>
-                        <h3> <a href="https://github.com/Andrew614/hospital-project" target="_blank">University Clinic Hospital</a></h3>
-                        <p>For the University Clinic Hospital project, I pair programmed with another student. This was written in eclipse with Java 8. We utilized Agile methodology, Scrum Board, TDD/ JUnit, and OOP.</p>
-                    </section>
-                    <section>
-                        <h3><a href="https://github.com/Andrew614/GuessingGame" target="_blank">Guessing Game</a></h3> 
-                        <p>For the Guessing Game project, I utilized Agile methodology, TDD/ JUnit, and OOP.</p>
+                    <h2 class="font-mod" id="projects">My Projects</h2>
+                    <section class="grid-columns-3">
+                        <section>
+                            <h3><a href="https://github.com/Andrew614/virtual-pet" target="_blank">Virtual Pet</a></h3>
+                            <p>For the Virutal Pet project, I worked in a team on 5 people, mostly mobbing the whole project together. This was written in eclipse with Java 8. We utilized Agile methodology, Scrum Board, TDD/ JUnit, and OOP.</p>
+                        </section>
+                        <section>
+                            <h3><a href="https://github.com/Andrew614/hospital-project" target="_blank">University Clinic Hospital</a></h3>
+                            <p>For the University Clinic Hospital project, I pair programmed with another student. This was written in eclipse with Java 8. We utilized Agile methodology, Scrum Board, TDD/ JUnit, and OOP.</p>
+                        </section>
+                        <section>
+                            <h3><a href="https://github.com/Andrew614/GuessingGame" target="_blank">Guessing Game</a></h3> 
+                            <p>For the Guessing Game project, I utilized Agile methodology, TDD/ JUnit, and OOP.</p>
+                        </section>
                     </section>
                 </article>
-                <article>
-                    <h2>Contact</h2>
-                </article>  
             </div>
         </div>
     </main>
     <footer>
-        <small>&copy; Andrew Zhang</small>
+        <p>&copy; 2019 Andrew Zhang</p>
     </footer>
+    <script src="https://kit.fontawesome.com/a923a437b8.js"></script>
 </body>
 </html>
