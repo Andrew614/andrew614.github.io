@@ -22,8 +22,38 @@ a:hover {
     color: #0000FF;
 }
 
+footer {
+    padding-left: 2rem;
+    font-size: .75rem;
+}
+
+h2 {
+    font-family: "indie flower";
+    text-decoration: underline;
+}
+
 ul {
     list-style-type: none;
+}
+
+.container {
+    padding: 6rem 2rem;
+}
+
+.flex-column-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-column-3 img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* margin-left: 30%; */
+}
+
+.flex-column-3 p {
+    padding-bottom: 1rem;
 }
 
 .main-header {
