@@ -18,9 +18,27 @@ a:hover {
     color: #0000FF;
 }
 
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bio {
+    padding-top: 1rem;
+}
+
 .container {
     background-color: #EDEDED;
     padding: 1rem 2rem;
+    padding-top: 6rem;
 }
 
 .fab {
@@ -39,7 +57,7 @@ a:hover {
     font-size: 2rem;
 }
 
-.font-mod {
+.font--mod {
     font-family: "indie flower";
     margin-bottom: 1rem;
     text-decoration: underline;
@@ -51,15 +69,20 @@ footer {
     font-size: .75rem;
 }
 
-.grid-columns-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 3%;
+.flex-column-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.flex-column-3 img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* margin-left: 30%; */
+}
+
+.flex-column-3 p {
+    padding-bottom: 1rem;
 }
 
 .main-header {
@@ -69,6 +92,8 @@ hr {
     font-family: "indie flower";
     justify-content: space-between;
     padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
 }
 
 .main-header__title {
@@ -97,8 +122,4 @@ hr {
 
 .nav__list-item:last-child {
     margin-right: 0;
-}
-
-ul {
-    list-style-type: none;
 }
