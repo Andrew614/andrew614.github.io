@@ -25,13 +25,18 @@ body {
 footer {
     padding-left: 2rem;
     font-size: .75rem;
-    position: absolute;
-    bottom: 0;
 }
 
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+img {
+    border-radius: 50%;
+    display: flex;
+    height: auto;
+    max-width: 100%;
 }
 
 section ul {
@@ -43,13 +48,25 @@ ul {
 }
 
 .bio {
-    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+}
+
+.bio img {
+    grid-column: 4/ span 3;
+    /* grid-column-start: 4;
+    grid-column-end: 7; */
+}
+
+.bio p {
+    grid-column: 2/ span 2;
+
 }
 
 .container {
     padding: 1rem 2rem;
     padding-top: 6rem;
-    
 }
 
 .font--mod {
