@@ -32,6 +32,16 @@ h2 {
     text-decoration: underline;
 }
 
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    width: 80vw;
+}
+
 ul {
     list-style-type: none;
 }
