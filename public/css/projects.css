@@ -80,12 +80,11 @@ ul {
 
 .projects-section__list {
   display: grid;
-  grid-gap: 2% 2%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .projects-section__title {
+  color: #4AB3F4;
   font-family: "indie flower";
   margin-bottom: 1rem;
   text-align: center;
@@ -102,4 +101,11 @@ ul {
 .container {
   padding: 1rem 2rem;
   padding-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  .projects-section__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
 }
