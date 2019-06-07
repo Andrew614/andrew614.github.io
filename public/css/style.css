@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 18px sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0000ff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer__copy {
+  padding-left: 2rem;
+  font-size: 0.75rem;
+}
+
+.main-header {
+  align-items: center;
+  background-color: #333;
+  display: flex;
+  font-family: "indie flower";
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.main-header__title a {
+  color: #9d9d9d;
+}
+
+.main-header__title a:hover {
+  color: #ffffff;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list a {
+  color: #9d9d9d;
+}
+
+.nav__list a:hover {
+  color: #ffffff;
+}
+
+.nav__list-item {
+  margin-right: 1em;
+}
+
+.nav__list-item:last-child {
+  margin-right: 0;
+}
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-section__about-me {
+  grid-column: 2 / span 2;
+  margin-right: 2rem;
+}
+
+.portfolio-section__avatar {
+  border: solid white 2px;
+  border-radius: 50%;
+  box-shadow: 5px 10px #dcdcdc;
+  grid-column: 4 / span 3;
+  height: auto;
+  max-width: 100%;
+}
+
+.portfolio-section__content--grid {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding-top: 2rem;
+}
+
+.portfolio-section__list {
+  grid-area: 2/2/3/5;
+}
+
+.portfolio-section__list-item {
+  margin-top: 0.5rem;
+}
+
+.portfolio-section__skills {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 3rem 1fr;
+  align-items: center;
+}
+
+.portfolio-section__subtitle {
+  grid-column: 2 / span 1;
+}
+
+.portfolio-section__title {
+  font-family: "indie flower";
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.portfolio-section__title--margin {
+  margin-top: 3rem;
+}
+
+/* Utility Class */
+
+.container {
+  padding: 1rem 2rem;
+  padding-top: 6rem;
+}
+
+.wrapper {
+  background-color: #ededed;
+}

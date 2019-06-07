@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Andrew Zhang</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images\favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="main-header">
-        <h1 class="main-header__title">Andrew Zhang</h1>
+    <link rel="shortcut icon" type="image/x-icon" href="./public/images/favicon.ico"/>
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <h1 class="main-header__title"><a href="index.html">Andrew Zhang</a></h1>
         <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__list-item"> <a href="index.html"><strong>About</strong></a></li>
-                <li class="nav__list-item"> <a href="projects.html"><strong>Projects</strong></a></li>
-                <li class="nav__list-item"> <a href="contact.html"><strong>Contact</strong></a></li>
-            </ul>
+          <ul class="nav__list">
+            <li class="nav__list-item"><a href="index.html"><strong>Home</strong></a></li>
+            <li class="nav__list-item"><a href="projects.html"><strong>Projects</strong></a></li>
+            <li class="nav__list-item"><a href="contact.html"><strong>Contact</strong></a></li>
+          </ul>
         </nav>
-    </header>
-    <main>
+      </header>
+      <main>
         <div class="container">
-            <div class="article-container column-layout column-layout--three">
-                <article>
-                    <h2 class="font--mod" id="about">About Me</h2>
-                    <section>
-                        <section class="bio">
-                                <p>Hi! I'm Andrew. I'm a software developer apprentice at We Can Code It in Columbus, OH. I am interested in learning new things and taking on new challenges.</p>
-                            <img src="images\dog.jpg" alt="pic of dog" width="500px" height="500px">
-                        </section>
-                        <ul><strong>Skills:</strong>
-                            <li>Agile</li>
-                            <li>TDD</li>
-                            <li>Object Oriented Programming</li>
-                            <li>Java</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascipt</li>
-                        </ul>
-                    </section>
-                </article>
-            </div>
+          <article class="portfolio-section">
+            <h2 class="portfolio-section__title">About</h2>
+            <section class="portfolio-section__content portfolio-section__content--grid">
+              <p class="portfolio-section__about-me">Hi! I'm Andrew. I'm a software developer apprentice at We 
+                Can Code It in Columbus, OH. I am interested in learning new things and taking on new challenges.</p>
+              <img class="portfolio-section__avatar" src="./public/images/dog.jpg" alt="pic of dog" width="500px" height="500px"/>
+            </section>
+            <section class="portfolio-section__content">
+              <h2 class="portfolio-section__title portfolio-section__title--margin">Skills</h2>
+              <section class="portfolio-section__skills">
+                <h3 class="portfolio-section__subtitle">Tech</h3>
+                <ul class="portfolio-section__list">
+                  <li class="portfolio-section__list-item"> Java, Spring, Hibernate, JPA, MVC, HTML5, CSS3, Javascript,
+                    Flexbox, Grid, TDD, Agile (Scrum)</li>
+                  <li class="portfolio-section__list-item">Object Oriented Programming (OOP), AJAX, JSON, Restful APIs,
+                    Responsive Design / Mobile</li>
+                  <li class="portfolio-section__list-item">Structured Query Language (SQL), Relational Databases,
+                    Source Control / Git</li>
+                </ul>
+              </section>
+            </section>
+          </article>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2019 Andrew Zhang</p>
-    </footer>
+      </main>
+      <footer>
+        <small class="footer__copy">&copy; 2019 Andrew Zhang</small>
+      </footer>
+    </div>
     <script src="https://kit.fontawesome.com/a923a437b8.js"></script>
-</body>
+  </body>
 </html>
