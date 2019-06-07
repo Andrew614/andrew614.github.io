@@ -66,24 +66,18 @@ ul {
   margin-right: 0;
 }
 
-.portfolio-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .portfolio-section__about-me {
-  grid-column: 2 / span 2;
+  grid-column: 1 / span 4;
   margin-right: 2rem;
 }
 
-.portfolio-section__avatar {
+.portfolio-section__image {
   border: solid white 2px;
   border-radius: 50%;
   box-shadow: 5px 10px #dcdcdc;
-  grid-column: 4 / span 3;
+  grid-column: 5 / span 3;
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .portfolio-section__content--grid {
@@ -93,30 +87,21 @@ ul {
   padding-top: 2rem;
 }
 
-.portfolio-section__list {
-  grid-area: 2/2/3/5;
-}
-
 .portfolio-section__list-item {
   margin-top: 0.5rem;
 }
 
-.portfolio-section__skills {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 3rem 1fr;
-  align-items: center;
-}
-
 .portfolio-section__subtitle {
-  grid-column: 2 / span 1;
+  margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 .portfolio-section__title {
+  color: #4AB3F4;
   font-family: "indie flower";
   margin-bottom: 1rem;
-  text-decoration: underline;
   text-align: center;
+  text-decoration: underline;
 }
 
 .portfolio-section__title--margin {
@@ -132,4 +117,24 @@ ul {
 
 .wrapper {
   background-color: #ededed;
+}
+
+@media (min-width: 556px) {
+  .portfolio-section__about-me {
+    grid-column: 2 / span 3;
+  }
+
+  .portfolio-section__skills {
+    margin-left: 14%;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio-section__about-me {
+    grid-column: 2 / span 2;
+  }
+
+  .portfolio-section__avatar {
+    grid-column: 4 / span 3;
+  }
 }
