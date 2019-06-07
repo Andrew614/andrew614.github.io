@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 18px sans-serif;
+}
+
+body {
+  background-color: #ededed;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0000ff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer__copy {
+  padding-left: 2rem;
+  font-size: 0.75rem;
+}
+
+.main-header {
+  align-items: center;
+  background-color: #333;
+  display: flex;
+  font-family: "indie flower";
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.main-header__title a {
+  color: #9d9d9d;
+}
+
+.main-header__title a:hover {
+  color: #ffffff;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list a {
+  color: #9d9d9d;
+}
+
+.nav__list a:hover {
+  color: #ffffff;
+}
+
+.nav__list-item {
+  margin-right: 1em;
+}
+
+.nav__list-item:last-child {
+  margin-right: 0;
+}
+
+.projects-section__img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.projects-section__list {
+  display: grid;
+  grid-gap: 2% 2%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.projects-section__title {
+  font-family: "indie flower";
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.projects-section__overview {
+  padding-bottom: 1rem;
+  width: 90%;
+}
+
+/* Utility Class */
+
+.container {
+  padding: 1rem 2rem;
+  padding-top: 6rem;
+}
