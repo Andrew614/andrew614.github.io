@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap');
 
 * {
   box-sizing: border-box;
@@ -23,7 +23,6 @@ ul {
 }
 
 .contact-section__title {
-  color: #4AB3F4;
   font-family: "indie flower";
   text-decoration: underline;
 }
@@ -60,20 +59,31 @@ ul {
   color: #000000;
 }
 
-.footer__copy {
+footer {
   bottom: 0;
-  padding-left: 2rem;
-  font-size: 0.75rem;
+  background-color: #333;
+  color: #9d9d9d;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
   position: absolute;
+  width: 100%;
+}
+
+.animate--zoom {
+  animation: zoom 1s;
+}
+
+.footer__copy {
+  font-size: 0.75rem;
 }
 
 .main-header {
   align-items: center;
   background-color: #333;
   display: flex;
-  font-family: "indie flower";
+  font-family: raleway;
   justify-content: space-between;
-  padding: 1rem 2rem;
   position: fixed;
   width: 100%;
 }
@@ -289,4 +299,25 @@ ul {
 
 .penguin * {
   position: absolute;
+}
+
+@keyframes zoom {
+  0%   { 
+    transform: scale(0);
+  }
+  100% { 
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 439px) {
+  .main-header {
+    padding: .5rem 1rem;
+  }
+}
+
+@media (min-width: 475px) {
+  .main-header {
+    padding: 1rem 2rem;
+  }
 }
