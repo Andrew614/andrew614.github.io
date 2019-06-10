@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap');
 
 * {
   box-sizing: border-box;
@@ -22,12 +22,24 @@ a:hover {
   color: #0000ff;
 }
 
+footer {
+  background-color: #333;
+  color: #9d9d9d;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
 ul {
   list-style-type: none;
 }
 
+.animate--zoom {
+  animation: zoom 1s;
+}
+
 .footer__copy {
-  padding-left: 2rem;
   font-size: 0.75rem;
 }
 
@@ -35,9 +47,8 @@ ul {
   align-items: center;
   background-color: #333;
   display: flex;
-  font-family: "indie flower";
+  font-family: raleway;
   justify-content: space-between;
-  padding: 1rem 2rem;
   position: fixed;
   width: 100%;
 }
@@ -73,7 +84,7 @@ ul {
 .projects-section__img {
   display: block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -84,7 +95,6 @@ ul {
 }
 
 .projects-section__title {
-  color: #4AB3F4;
   font-family: "indie flower";
   margin-bottom: 1rem;
   text-align: center;
@@ -103,9 +113,40 @@ ul {
   padding-top: 6rem;
 }
 
-@media (min-width: 768px) {
+@keyframes zoom {
+  0%   { 
+    transform: scale(0);
+  }
+  100% { 
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 439px) {
+  .main-header {
+    padding: .5rem 1rem;
+  }
+}
+
+@media (min-width: 475px) {
+  .main-header {
+    padding: 1rem 2rem;
+  }
+
+  .projects-section__img {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 768px) {  
   .projects-section__list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects-section__img {
+    height: 50vh;
   }
 }
