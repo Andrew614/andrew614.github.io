@@ -12,7 +12,10 @@ class Events {
             // }
             images.forEach((img) => {
                 img.classList.toggle('dark-img');
-            })
+            });
+            links.forEach((link) => {
+                link.classList.toggle('dark-link');
+            });
             if (themeButton.textContent === 'Light mode') {
                 themeButton.textContent = 'Dark mode';
             } else {
@@ -21,7 +24,7 @@ class Events {
         });
     }
 
-    hoverButton() {
+    hoverThemeButtom() {
         const themeButton = document.querySelector('.theme-button');
 
         themeButton.addEventListener('mouseenter', () => {

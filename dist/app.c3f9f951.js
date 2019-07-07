@@ -146,6 +146,9 @@ function () {
         images.forEach(function (img) {
           img.classList.toggle('dark-img');
         });
+        links.forEach(function (link) {
+          link.classList.toggle('dark-link');
+        });
 
         if (themeButton.textContent === 'Light mode') {
           themeButton.textContent = 'Dark mode';
@@ -157,8 +160,8 @@ function () {
       });
     }
   }, {
-    key: "hoverButton",
-    value: function hoverButton() {
+    key: "hoverThemeButtom",
+    value: function hoverThemeButtom() {
       var themeButton = document.querySelector('.theme-button');
       themeButton.addEventListener('mouseenter', function () {
         themeButton.classList.add('theme-button--hover');
@@ -207,7 +210,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63127" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64627" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
