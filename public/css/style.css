@@ -88,6 +88,10 @@ ul {
   margin-right: 0;
 }
 
+.portfolio-section {
+  margin-bottom: 3rem;
+}
+
 .portfolio-section__about-me {
   grid-column: 1 / span 4;
   margin-right: 2rem;
@@ -135,6 +139,10 @@ ul {
 
 .portfolio-section__title--margin {
   margin-top: 3rem;
+}
+
+.projects-section {
+  margin-bottom: 3rem;
 }
 
 .projects-section__img {
