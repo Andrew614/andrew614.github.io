@@ -38,6 +38,10 @@ ul {
   animation: zoom 2s;
 }
 
+.contact-section {
+  margin: 3rem 0;
+}
+
 .contact-section__list {
   display: flex;
   justify-content: center;
@@ -89,7 +93,7 @@ ul {
 }
 
 .portfolio-section {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .portfolio-section__about-me {
@@ -142,7 +146,7 @@ ul {
 }
 
 .projects-section {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .projects-section__img {
