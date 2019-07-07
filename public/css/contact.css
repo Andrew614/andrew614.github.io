@@ -7,7 +7,7 @@
 }
 
 html {
-  font: 18px sans-serif;
+  font: 18px/1 sans-serif;
 }
 
 body {
@@ -18,64 +18,40 @@ a {
   text-decoration: none;
 }
 
+footer {
+  align-items: center;
+  background-color: #333;
+  color: #9d9d9d;
+  display: flex;
+  justify-content: center;
+}
+
 ul {
   list-style-type: none;
+}
+
+.contact-section__list {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.contact-section__list-item {
+  margin-right: 4rem;
+}
+
+.contact-section__list-item:last-child {
+  margin-right: 0;
 }
 
 .contact-section__title {
   font-family: "indie flower";
   text-decoration: underline;
-}
-
-.contact-section__list {
-  display: flex;
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 1rem 2rem;
-  padding-top: 6rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.fab,
-.far,
-.fas {
-  color: #9d9d9d;
-  margin-right: 1em;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.fab:hover,
-.far:hover,
-.fas:hover {
-  color: #000000;
-}
-
-footer {
-  bottom: 0;
-  background-color: #333;
-  color: #9d9d9d;
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-  position: absolute;
-  width: 100%;
+  text-align: center;
 }
 
 .animate--zoom {
   animation: zoom 1s;
-}
-
-.footer__copy {
-  font-size: 0.75rem;
 }
 
 .main-header {
@@ -84,15 +60,24 @@ footer {
   display: flex;
   font-family: raleway;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
 }
 
-.main-header__title a {
+.main-header {
+  align-items: center;
+  background-color: #333;
+  display: flex;
+  font-family: raleway;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.main-header a {
   color: #9d9d9d;
 }
 
-.main-header__title a:hover {
+.main-header a:hover {
   color: #ffffff;
 }
 
@@ -100,21 +85,15 @@ footer {
   display: flex;
 }
 
-.nav__list a {
-  color: #9d9d9d;
-}
-
-.nav__list a:hover {
-  color: #ffffff;
-}
-
 .nav__list-item {
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .nav__list-item:last-child {
   margin-right: 0;
 }
+
+/* Penguin */
 
 .penguin {
   position: relative;
@@ -299,6 +278,18 @@ footer {
 
 .penguin * {
   position: absolute;
+}
+
+/* utility class */
+
+.container {
+  min-height: 100vh;
+  padding: 1rem 2rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-rows: 4em auto 2.5em;
 }
 
 @keyframes zoom {
