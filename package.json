@@ -7,11 +7,13 @@
     "parcel-bundler": "^1.12.3"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "jest": "^24.8.0"
   },
   "scripts": {
     "test": "jest --color --coverage",
-    "start": "parcel index.html *.html"
+    "start": "parcel index.html *.html",
+    "predeploy": "rm -rf dist && parcel build index.html"
   },
   "repository": {
     "type": "git",
