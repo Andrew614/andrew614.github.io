@@ -18,7 +18,7 @@ html {
 }
 
 .jokes__item{
-    animation: fade 5s steps(75);
+    animation: slidein 5s steps(75);
     width: 45vw;
     margin-top: 2rem;
     margin-left: 3%;
@@ -34,7 +34,7 @@ html {
     min-height: 100vh;
 }
 
-@keyframes fade { 
+@keyframes slidein { 
     from { width: 0; } 
   } 
 
