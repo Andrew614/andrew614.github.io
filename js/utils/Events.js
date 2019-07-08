@@ -24,7 +24,7 @@ class Events {
         });
     }
 
-    hoverThemeButtom() {
+    hoverThemeButton() {
         const themeButton = document.querySelector('.theme-button');
 
         themeButton.addEventListener('mouseenter', () => {
