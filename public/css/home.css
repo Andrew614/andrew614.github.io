@@ -10,7 +10,7 @@ h1, h3 {
 
 .container {
     align-items: center;
-    background-color: black;
+    background-image: url(../images/home-background.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
