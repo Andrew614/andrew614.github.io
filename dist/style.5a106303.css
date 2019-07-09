@@ -253,6 +253,29 @@ ul {
 }
 
 @media (min-width: 768px) {
+
+  .main-header {
+    align-items: center;
+    background-color: #333;
+    display: flex;
+    font-family: raleway;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .nav__bars {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__list li{
+    margin-right: 1rem;
+  }
+
   .portfolio-section__about-me {
     grid-column: 2 / span 2;
   }
