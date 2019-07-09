@@ -30,6 +30,7 @@ class Events {
 
         themeButton.addEventListener('click', () => {
             body.classList.toggle('dark');
+            themeButton.classList.toggle('dark');
             // for (i = 0; i < images.length; i++) {
             //     images[i].classList.toggle('dark');
             // }

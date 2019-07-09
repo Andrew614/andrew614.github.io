@@ -189,12 +189,7 @@ ul {
 }
 
 .theme-button {
-  color: #9d9d9d;
   text-align: center;
-}
-
-.theme-button--hover {
-  color: #fff;
 }
 
 /* Utility Class */
@@ -296,7 +291,15 @@ ul {
   }
 }
 
-/* Theming Classes */
+/* Javascript Classes */
+
+.active {
+  display: block;
+}
+
+.theme-button--hover {
+  opacity: 0.5;
+}
 
 .dark {
   background-color: #333;
@@ -309,10 +312,6 @@ ul {
 
 .dark-link {
   color: white;
-}
-
-.active {
-  display: block;
 }
 
 
