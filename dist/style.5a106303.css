@@ -192,6 +192,12 @@ ul {
   text-align: center;
 }
 
+.theme-button-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 /* Utility Class */
 
 .container {
@@ -222,13 +228,13 @@ ul {
 
 @media (min-width: 439px) {
   .main-header {
-    padding: .5rem 1rem;
+    padding: 2rem 2rem;
   }
 }
 
 @media (min-width: 475px) {
   .main-header {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
   }
 
   .projects-section__img {
