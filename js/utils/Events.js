@@ -1,4 +1,27 @@
 class Events {
+    hoverThemeButton() {
+        const themeButton = document.querySelector('.theme-button');
+
+        themeButton.addEventListener('mouseenter', () => {
+            themeButton.classList.add('theme-button--hover');
+
+        });
+
+        themeButton.addEventListener('mouseout', () => {
+            themeButton.classList.remove('theme-button--hover');
+
+        });
+    }
+
+    toggleNavbar() {
+        let navMenu = document.querySelector('.nav__list');
+        let navbars = document.querySelector('.nav__bars');
+
+        navbars.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+
     toggleTheme() {
         const body = document.body
         const themeButton = document.querySelector('.theme-button');
@@ -7,6 +30,7 @@ class Events {
 
         themeButton.addEventListener('click', () => {
             body.classList.toggle('dark');
+            themeButton.classList.toggle('dark');
             // for (i = 0; i < images.length; i++) {
             //     images[i].classList.toggle('dark');
             // }
@@ -21,20 +45,6 @@ class Events {
             } else {
                 themeButton.textContent = 'Light mode';
             };
-        });
-    }
-
-    hoverThemeButton() {
-        const themeButton = document.querySelector('.theme-button');
-
-        themeButton.addEventListener('mouseenter', () => {
-            themeButton.classList.add('theme-button--hover');
-
-        });
-
-        themeButton.addEventListener('mouseout', () => {
-            themeButton.classList.remove('theme-button--hover');
-
         });
     }
 

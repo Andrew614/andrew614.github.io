@@ -132,6 +132,26 @@ function () {
   }
 
   _createClass(Events, [{
+    key: "hoverThemeButton",
+    value: function hoverThemeButton() {
+      var themeButton = document.querySelector('.theme-button');
+      themeButton.addEventListener('mouseenter', function () {
+        themeButton.classList.add('theme-button--hover');
+      });
+      themeButton.addEventListener('mouseout', function () {
+        themeButton.classList.remove('theme-button--hover');
+      });
+    }
+  }, {
+    key: "toggleNavbar",
+    value: function toggleNavbar() {
+      var navMenu = document.querySelector('.nav__list');
+      var navbars = document.querySelector('.nav__bars');
+      navbars.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+      });
+    }
+  }, {
     key: "toggleTheme",
     value: function toggleTheme() {
       var body = document.body;
@@ -139,7 +159,8 @@ function () {
       var images = document.querySelectorAll('.contact-section__list-item');
       var links = document.querySelectorAll('a');
       themeButton.addEventListener('click', function () {
-        body.classList.toggle('dark'); // for (i = 0; i < images.length; i++) {
+        body.classList.toggle('dark');
+        themeButton.classList.toggle('dark'); // for (i = 0; i < images.length; i++) {
         //     images[i].classList.toggle('dark');
         // }
 
@@ -159,17 +180,6 @@ function () {
         ;
       });
     }
-  }, {
-    key: "hoverThemeButton",
-    value: function hoverThemeButton() {
-      var themeButton = document.querySelector('.theme-button');
-      themeButton.addEventListener('mouseenter', function () {
-        themeButton.classList.add('theme-button--hover');
-      });
-      themeButton.addEventListener('mouseout', function () {
-        themeButton.classList.remove('theme-button--hover');
-      });
-    }
   }]);
 
   return Events;
@@ -180,8 +190,9 @@ module.exports = Events;
 var Events = require('./utils/Events');
 
 var events = new Events();
-events.toggleTheme();
 events.hoverThemeButton();
+events.toggleNavbar();
+events.toggleTheme();
 },{"./utils/Events":"js/utils/Events.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -210,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57948" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58555" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
