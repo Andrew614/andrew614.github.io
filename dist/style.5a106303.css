@@ -54,6 +54,7 @@ ul {
 
 .contact-section__list-item:hover {
   opacity: 0.5;
+  transform: scale(1.1);
 }
 
 .contact-section__list-item:last-child {
