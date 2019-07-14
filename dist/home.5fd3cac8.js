@@ -132,12 +132,25 @@ function () {
   }
 
   _createClass(EventsHomePage, [{
+    key: "homePageTransition",
+    value: function homePageTransition() {
+      var home = document.querySelector('.homepage');
+      home.addEventListener('click', function () {
+        home.classList.add('transition--end');
+      });
+    }
+  }, {
     key: "homePageRedirect",
     value: function homePageRedirect() {
       var home = document.querySelector('.homepage');
       home.addEventListener('click', function () {
-        window.location.href = 'index.html';
+        setTimeout(function () {
+          window.location.href = 'index.html';
+        }, 1400);
       });
+      setTimeout(function () {
+        window.location.href = 'index.html';
+      }, 45000);
     }
   }]);
 
@@ -149,6 +162,7 @@ module.exports = EventsHomePage;
 var EventsHomePage = require('./utils/EventsHomePage');
 
 var eventsHomePage = new EventsHomePage();
+eventsHomePage.homePageTransition();
 eventsHomePage.homePageRedirect();
 },{"./utils/EventsHomePage":"js/utils/EventsHomePage.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -178,7 +192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53584" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59648" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
