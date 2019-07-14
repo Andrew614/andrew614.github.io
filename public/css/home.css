@@ -24,6 +24,8 @@ html {
     margin-left: 3%;
 }
 
+/* UTILITY CLASSES */
+
 .container {
     align-items: center;
     background-image: url(../images/home-background.jpg);
@@ -34,9 +36,35 @@ html {
     min-height: 100vh;
 }
 
+/* JS CLASSES */
+
+.transition--end {
+    animation: transition--end 3s ease;
+}
+
+/* KEY FRAMES */
+
+@keyframes transition--end {
+    10% {
+      transform: scale(1, 0.002); 
+    }
+    35% {
+      transform: scale(0.2, 0.002);
+      opacity: 1;
+    }   
+    50% {
+      transform: scale(0.2, 0.002);
+      opacity: 0;
+    }   
+}
+
 @keyframes slidein { 
-    from { width: 0; } 
-  } 
+    from { 
+        width: 0; 
+    } 
+} 
+
+/* MEDIA QUERIES */
 
 @media (min-width: 556px) {
     .jokes__item{
